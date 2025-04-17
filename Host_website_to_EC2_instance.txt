@@ -1,0 +1,38 @@
+# This is my first sample project In which I have deploy a website on EC2 Instance with the help this below steps.
+
+>>First Step.
+
+. Create EC2 instance on AWS Cloud.
+. open SSH and copy URL.
+. Open Git on your local and past URL connect. Now EC2 is connected
+
+>> Second step
+Give command 
+
+. sudo du - (# switch root USER)
+. sudo yum uodate -y (# update all the dependency)
+
+>> Third step Install web server.
+
+. sudo yum install httpd
+. mkdir tmp (Create a directory to store the html web server file )
+. cd tmp (go insde the directory)
+. wget (Paste URL your web server file)
+. ls (check all file insdie the)
+. mv * /var/www/html/ (Move all file into the html directory)
+
+>> Now you can back to user mode.
+
+. cd /var/www/html/
+. ls (check all file inside the /var/www/html directory)
+. unzip <file_name> (unzip the file)
+
+>> Fourth step to check the server is running active or not.
+
+. systemctl status httpd (To check status of server)
+. systemctl enable httpd (To active the Server)
+. systemctl start httpd  (To start the seerver)
+
+>> Fifth check you website is deployed on server. (If the web page is not working, check you firewall allow Https or Http traffic on publicly access)
+
+
