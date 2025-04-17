@@ -9,7 +9,7 @@
 >> Second step
 Give command 
 
-. sudo du - (# switch root USER)
+. sudo su - (# switch root USER)
 . sudo yum uodate -y (# update all the dependency)
 
 >> Third step Install web server.
